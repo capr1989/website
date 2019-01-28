@@ -1,10 +1,4 @@
-import Link from "next/link";
-import "../css/main.css";
+import MainLayout from "../components/MainLayout";
 export default () => (
-  <div>
-    Hello World.{" "}
-    <Link href="/about" as={process.env.BACKEND_URL + "/about"}>
-      <a>About</a>
-    </Link>
-  </div>
+  <MainLayout>Loading data from {process.env.BACKEND_URL}</MainLayout>
 );
