@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{208:function(n,e,t){__NEXT_REGISTER_PAGE("/",function(){return n.exports=t(209),{page:n.exports.default}})},209:function(n,e,t){"use strict";t.r(e);var a=t(1),o=t.n(a),r=t(235);e.default=function(){return o.a.createElement(r.a,null,"Loading data from ","/website")}}},[[208,1,0]]]);
