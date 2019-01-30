@@ -10,7 +10,7 @@ export default class Index extends Component {
     try {
       const response = await fetch(
         // "https://ceohzced5b.execute-api.us-east-2.amazonaws.com/dev/get"
-        "https://jsonplaceholder.typicode.com/todos"
+        "https://jsonplaceholder.typicode.com/posts"
       );
       data = await response.json();
     } catch (error) {
