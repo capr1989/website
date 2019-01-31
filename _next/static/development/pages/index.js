@@ -12117,34 +12117,25 @@ function (_Component) {
   _createClass(Index, [{
     key: "render",
     value: function render() {
-      //   const { data } = this.props;
-      //   const renderData = () => {
-      //     return data.map(d => {
-      //       return (
-      //         <Link
-      //           key={d.id}
-      //           href={`/post?id=${d.id}`}
-      //           as={`${process.env.BACKEND_URL}/post/${d.id}`}
-      //         >
-      //           <a>
-      //             <li key={d.id}>{d.title}</li>
-      //           </a>
-      //         </Link>
-      //       );
-      //     });
-      //   };
-      //   // console.log(data);
-      //   return (
-      //     <MainLayout>
-      //       {/* <h1>{data.body}</h1> */}
-      //       <ul>{renderData()}</ul>
-      //       {process.env.BACKEND_URL}
-      //     </MainLayout>
-      //   );
-      // }
-      console.log(this.props);
-      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, this.props.data.body);
-    }
+      var data = this.props.data;
+
+      var renderData = function renderData() {
+        return data.map(function (d) {
+          return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+            key: d.id,
+            href: "/post?id=".concat(d.id),
+            as: "".concat("", "/post/").concat(d.id)
+          }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+            key: d.id
+          }, d.title)));
+        });
+      }; // console.log(data);
+
+
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_MainLayout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ul", null, renderData()), "");
+    } // console.log(this.props);
+    // return <p>{this.props.data.body}</p>;
+
   }], [{
     key: "getInitialProps",
     value: function () {
@@ -12158,8 +12149,8 @@ function (_Component) {
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return node_fetch__WEBPACK_IMPORTED_MODULE_4___default()("https://rdugjtk5y9.execute-api.us-east-2.amazonaws.com/dev/" // "https://jsonplaceholder.typicode.com/posts"
-                );
+                return node_fetch__WEBPACK_IMPORTED_MODULE_4___default()( // "https://rdugjtk5y9.execute-api.us-east-2.amazonaws.com/dev/"
+                "https://jsonplaceholder.typicode.com/posts");
 
               case 3:
                 response = _context.sent;
@@ -12177,11 +12168,16 @@ function (_Component) {
                 console.log(_context.t0);
 
               case 12:
+                _context.next = 14;
+                return data.splice(0, 10);
+
+              case 14:
+                _context.t1 = _context.sent;
                 return _context.abrupt("return", {
-                  data: data
+                  data: _context.t1
                 });
 
-              case 13:
+              case 16:
               case "end":
                 return _context.stop();
             }
