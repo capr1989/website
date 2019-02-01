@@ -1,0 +1,15 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+test:
+  override:
+    - exit 0
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - chmod +x ./scripts/deploy.sh
+      - ./scripts/deploy.sh app

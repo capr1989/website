@@ -9,7 +9,7 @@ export default class Index extends Component {
     let data;
     try {
       const response = await fetch(
-        // "https://ceohzced5b.execute-api.us-east-2.amazonaws.com/dev/get"
+        // "https://rdugjtk5y9.execute-api.us-east-2.amazonaws.com/dev/"
         "https://jsonplaceholder.typicode.com/posts"
       );
       data = await response.json();
@@ -17,6 +17,8 @@ export default class Index extends Component {
       console.log(error);
     }
     return { data: await data.splice(0, 10) };
+
+    // return { data: data };
   }
   render() {
     const { data } = this.props;
@@ -44,4 +46,6 @@ export default class Index extends Component {
       </MainLayout>
     );
   }
+  // console.log(this.props);
+  // return <p>{this.props.data.body}</p>;
 }

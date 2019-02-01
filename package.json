@@ -11,7 +11,11 @@
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.6",
     "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.2.1",
+    "emotion": "^10.0.6",
+    "emotion-server": "^10.0.6",
     "express": "^4.16.4",
     "next": "7.0.2",
     "node-fetch": "^2.3.0",
