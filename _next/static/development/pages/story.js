@@ -29,13 +29,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -48,22 +50,38 @@ function (_React$Component) {
   _inherits(AnimationLinks, _React$Component);
 
   function AnimationLinks() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     _classCallCheck(this, AnimationLinks);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(AnimationLinks).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AnimationLinks)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "pathArr", _this.props.router.pathname.split("/"));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "query", _this.pathArr[_this.pathArr.length - 1]);
+
+    return _this;
   }
 
   _createClass(AnimationLinks, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.router.query.name = this.query;
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_2__["animationLinks"].map(function (p, key) {
-        var pathArr = _this.props.router.pathname.split("/");
-
-        var query = pathArr[pathArr.length - 1];
         var nameLength = p.name.split("").length;
         var linkName = p.name.split("")[0].toUpperCase() + p.name.split("").splice(1, nameLength).join("");
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -71,7 +89,7 @@ function (_React$Component) {
           href: "/animation/".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: query === p.name ? "cust__active col nav-link" : "col nav-link"
+          className: _this2.query === p.name ? "cust__active col nav-link" : "col nav-link"
         }, linkName)));
       }));
     }
