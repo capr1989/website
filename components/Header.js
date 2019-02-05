@@ -1,15 +1,51 @@
 import Link from "next/link";
+import AnimationLinks from "./AnimationLinks";
+import { withRouter } from "next/router";
+import { mainLinks } from "../js/globals";
+import { activeClass } from "../js/utils";
 
-export default () => {
+export default withRouter(props => {
   return (
-    <div>
+    <ul className="row header">
       <Link href="/" as={`${process.env.BACKEND_URL}/`}>
-        <a>Go to Home</a>
+        <a>
+          <li
+            className={activeClass("/", props.router.pathname, "col nav-link")}
+          >
+            Go to Home{" "}
+          </li>
+        </a>
       </Link>
-      <Link href="/page1" as={`${process.env.BACKEND_URL}/about`}>
-        <a>Go to page</a>
-      </Link>
-      ;
-    </div>
+      {mainLinks.map((p, index) => {
+        const nameLength = p.name.split("").length;
+        const linkName =
+          p.name.split("")[0].toUpperCase() +
+          p.name
+            .split("")
+            .splice(1, nameLength)
+            .join("");
+
+        return (
+          <Link
+            key={index}
+            href={"/" + p.name}
+            as={`${process.env.BACKEND_URL}/` + p.name}
+          >
+            <a>
+              <li
+                className={activeClass(
+                  props.router.pathname.split("/")[1],
+                  p.name,
+                  "col nav-link"
+                )}
+              >
+                {linkName}
+              </li>
+            </a>
+          </Link>
+        );
+      })}
+      <AnimationLinks />;
+    </ul>
   );
-};
+});

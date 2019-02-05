@@ -1,2 +1,4 @@
 import MainLayout from "../components/MainLayout";
-export default () => <MainLayout>about</MainLayout>;
+import HOC from "../components/HOC";
+
+export default MainLayout(() => <p>about</p>);
