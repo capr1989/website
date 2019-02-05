@@ -50,14 +50,15 @@ module.exports = withCSS({
       {}
     );
 
-    // combine the map of post pages with the home
-    return Object.assign({}, pages, animationPages, {
+    const fullMappedRoutes = Object.assign({}, pages, animationPages, {
       "/": { page: "/" },
       "/about": { page: "/about" },
       "/animation": { page: "/animation" },
       "/story": { page: "/story" },
       "/contact": { page: "/contact" }
     });
+    // combine the map of post pages with the home
+    return fullMappedRoutes;
   },
 
   assetPrefix: !debug ? "/website/" : "",

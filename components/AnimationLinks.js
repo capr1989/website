@@ -6,13 +6,15 @@ import { activeClass, getLinkName } from "../js/utils";
 
 export default withRouter(
   class AnimationLinks extends React.Component {
+    pathArr = this.props.router.pathname.split("/");
+    query = this.pathArr[this.pathArr.length - 1];
+    componentDidMount() {
+      this.props.router.query.name = this.query;
+    }
     render() {
       return (
         <ul className={"col px-0"}>
           {animationLinks.map((p, key) => {
-            const pathArr = this.props.router.pathname.split("/");
-            const query = pathArr[pathArr.length - 1];
-            console.log(query === p.name, "te agarre");
             const nameLength = p.name.split("").length;
             const linkName =
               p.name.split("")[0].toUpperCase() +
@@ -29,7 +31,7 @@ export default withRouter(
                 <a>
                   <li
                     className={
-                      query === p.name
+                      this.query === p.name
                         ? "cust__active col nav-link"
                         : "col nav-link"
                     }
