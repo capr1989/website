@@ -61,7 +61,6 @@ function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      console.log(this.props, "router-animarion links");
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_3__["animationLinks"].map(function (p) {
@@ -98,7 +97,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function HOC(Component, properties) {
   return function (props) {
-    console.log(properties, "hoc, props");
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Hola", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, null));
   };
 }

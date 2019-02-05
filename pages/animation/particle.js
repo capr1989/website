@@ -37,7 +37,6 @@ const Wrapper = styled.div`
 
 const Box = styled.div`
   flex-basis: ${props => {
-    console.log(props.width);
     return props.width;
   }}%;
   background: ${props => props.bgColor};

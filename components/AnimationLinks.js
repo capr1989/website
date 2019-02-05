@@ -8,7 +8,6 @@ import { activeClass, getLinkName } from "../js/utils";
 export default withRouter(
   class AnimationLinks extends React.Component {
     render() {
-      console.log(this.props, "router-animarion links");
       return (
         <ul className={"col px-0"}>
           {animationLinks.map(p => {

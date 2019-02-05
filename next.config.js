@@ -21,12 +21,12 @@ module.exports = withCSS({
     // tranform the list of posts into a map of pages with the pathname `/post/:id`
 
     const animationList = files.map(f => {
-      return { name: f };
+      const fileName = f.split(".")[0];
+      return { name: fileName };
     });
+    console.log("ani list", animationList);
     const pages = postList.reduce(
       (pages, post) => {
-        console.log("backend post", pages);
-
         return Object.assign({}, pages, {
           [`/post/${post.id}`]: {
             page: "/post",
@@ -40,7 +40,6 @@ module.exports = withCSS({
 
     const animationPages = animationList.reduce(
       (list, animation) => {
-        console.log("backend", list);
         return Object.assign({}, list, {
           [`/animation/${animation.name}`]: {
             page: "/animation",
