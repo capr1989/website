@@ -5,6 +5,9 @@ import { mainLinks } from "../js/globals";
 import { activeClass } from "../js/utils";
 
 export default withRouter(props => {
+  if (props.router.query.name === "first") {
+    console.log(props, "first");
+  }
   return (
     <ul className="row header">
       <Link href="/" as={`${process.env.BACKEND_URL}/`}>

@@ -61,7 +61,7 @@ function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      console.log(this.props.router.query, "router-animarion links");
+      console.log(this.props, "router-animarion links");
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_3__["animationLinks"].map(function (p) {
@@ -110,6 +110,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(function (props) {
+  if (props.router.query.name === "first") {
+    console.log(props, "first");
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "row header"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -36677,7 +36681,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 13:
 /*!*******************************************!*\
   !*** multi ./pages/animation/particle.js ***!
   \*******************************************/
@@ -36746,5 +36750,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[13,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=particle.js.map
