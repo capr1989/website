@@ -25,6 +25,8 @@ module.exports = withCSS({
     });
     const pages = postList.reduce(
       (pages, post) => {
+        console.log("backend post", pages);
+
         return Object.assign({}, pages, {
           [`/post/${post.id}`]: {
             page: "/post",
@@ -38,6 +40,7 @@ module.exports = withCSS({
 
     const animationPages = animationList.reduce(
       (list, animation) => {
+        console.log("backend", list);
         return Object.assign({}, list, {
           [`/animation/${animation.name}`]: {
             page: "/animation",

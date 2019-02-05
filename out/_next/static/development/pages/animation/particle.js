@@ -61,6 +61,7 @@ function (_React$Component) {
     value: function render() {
       var _this = this;
 
+      console.log(this.props.router.query, "router-animarion links");
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_3__["animationLinks"].map(function (p) {
@@ -36676,7 +36677,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 13:
+/***/ 3:
 /*!*******************************************!*\
   !*** multi ./pages/animation/particle.js ***!
   \*******************************************/
@@ -36745,5 +36746,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[13,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=particle.js.map
