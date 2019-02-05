@@ -12,6 +12,7 @@ export default withRouter(
           {animationLinks.map((p, key) => {
             const pathArr = this.props.router.pathname.split("/");
             const query = pathArr[pathArr.length - 1];
+            console.log(query === p.name, "te agarre");
             const nameLength = p.name.split("").length;
             const linkName =
               p.name.split("")[0].toUpperCase() +

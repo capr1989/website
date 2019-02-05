@@ -64,6 +64,7 @@ function (_React$Component) {
         var pathArr = _this.props.router.pathname.split("/");
 
         var query = pathArr[pathArr.length - 1];
+        console.log(query === p.name, "te agarre");
         var nameLength = p.name.split("").length;
         var linkName = p.name.split("")[0].toUpperCase() + p.name.split("").splice(1, nameLength).join("");
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -12244,7 +12245,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 16:
+/***/ 12:
 /*!*****************************************!*\
   !*** multi ./pages/animation/second.js ***!
   \*****************************************/
@@ -12269,5 +12270,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[16,"static/runtime/webpack.js","styles"]]]));;
+},[[12,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=second.js.map

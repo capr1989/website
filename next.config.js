@@ -24,7 +24,6 @@ module.exports = withCSS({
       const fileName = f.split(".")[0];
       return { name: fileName };
     });
-    console.log("ani list", animationList);
     const pages = postList.reduce(
       (pages, post) => {
         return Object.assign({}, pages, {
