@@ -1,6 +1,7 @@
 import MainLayout from "../components/MainLayout";
 import { withRouter } from "next/router";
 import fetch from "node-fetch";
+import App from "next/app";
 
 import React, { Component } from "react";
 
@@ -22,12 +23,12 @@ class Post extends Component {
   render() {
     const { post } = this.props;
     return (
-      <MainLayout>
+      <div>
         <h1>{post.title}</h1>
         <p>{post.body}</p>
-      </MainLayout>
+      </div>
     );
   }
 }
 
-export default withRouter(Post);
+export default withRouter(MainLayout(Post));

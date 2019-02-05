@@ -10,7 +10,6 @@ export default withRouter(
     query = this.pathArr[this.pathArr.length - 1];
     componentDidMount() {
       this.props.router.query.name = this.query;
-      console.log(this.props.router.query);
     }
     render() {
       return (
