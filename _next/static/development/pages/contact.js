@@ -73,6 +73,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.router.query.name = this.query;
+      console.log(this.props.router.query);
     }
   }, {
     key: "render",
