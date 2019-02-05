@@ -56,7 +56,9 @@ module.exports = withCSS({
     return Object.assign({}, pages, animationPages, {
       "/": { page: "/" },
       "/about": { page: "/about" },
-      "/animation": { page: "/animation" }
+      "/animation": { page: "/animation" },
+      "/story": { page: "/story" },
+      "/contact": { page: "/contact" }
     });
   },
 
