@@ -7,9 +7,15 @@ import { upperCaseLink } from "../js/utils";
 export default withRouter(
   class AnimationLinks extends React.Component {
     componentDidMount() {
-      this.mountPathArr = window.location.pathname.split("/");
-      this.mountPathLength = this.mountPathArr.length;
-      this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+      // this.mountPathArr = window.location.pathname.split("/");
+      // this.mountPathLength = this.mountPathArr.length;
+      // this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+      // const node = document.querySelectorAll(".cust__active.col.nav-link");
+      // const classes = node[0].className
+      //   .split(" ")
+      //   .splice(1, 2)
+      //   .join(" ");
+      // node[0].className = classes;
     }
 
     render() {
@@ -19,14 +25,10 @@ export default withRouter(
             const linkName = upperCaseLink(p.name);
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
-            const query = this.props.router.query.name;
-
-            console.log(query, "=", p.name, "= query name comp");
-            console.log("+++++++++++++++++++++++++++++++++++++");
-            console.log(pathArr, pathLength, query);
+            const query = pathArr[pathLength - 1];
 
             const classCondition = () => {
-              if (query === p.name || this.mountQuery === p.name) {
+              if (query === p.name) {
                 return "cust__active col nav-link";
               }
               return "col nav-link";

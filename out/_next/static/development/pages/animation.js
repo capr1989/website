@@ -55,10 +55,15 @@ function (_React$Component) {
 
   _createClass(AnimationLinks, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mountPathArr = window.location.pathname.split("/");
-      this.mountPathLength = this.mountPathArr.length;
-      this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+    value: function componentDidMount() {// this.mountPathArr = window.location.pathname.split("/");
+      // this.mountPathLength = this.mountPathArr.length;
+      // this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+      // const node = document.querySelectorAll(".cust__active.col.nav-link");
+      // const classes = node[0].className
+      //   .split(" ")
+      //   .splice(1, 2)
+      //   .join(" ");
+      // node[0].className = classes;
     }
   }, {
     key: "render",
@@ -74,13 +79,10 @@ function (_React$Component) {
 
         var pathLength = _this.props.router.asPath.split("/").length;
 
-        var query = _this.props.router.query.name;
-        console.log(query, "=", p.name, "= query name comp");
-        console.log("+++++++++++++++++++++++++++++++++++++");
-        console.log(pathArr, pathLength, query);
+        var query = pathArr[pathLength - 1];
 
         var classCondition = function classCondition() {
-          if (query === p.name || _this.mountQuery === p.name) {
+          if (query === p.name) {
             return "cust__active col nav-link";
           }
 
@@ -14987,7 +14989,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!**********************************!*\
   !*** multi ./pages/animation.js ***!
   \**********************************/
@@ -15012,5 +15014,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[6,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=animation.js.map
