@@ -16,6 +16,8 @@ export default withRouter(
       //   .splice(1, 2)
       //   .join(" ");
       // node[0].className = classes;
+      // console.log(node[0].classList);
+      console.log("did mount");
     }
 
     render() {
