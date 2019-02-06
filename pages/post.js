@@ -1,7 +1,6 @@
 import MainLayout from "../components/MainLayout";
 import { withRouter } from "next/router";
 import fetch from "node-fetch";
-import App from "next/app";
 
 import React, { Component } from "react";
 

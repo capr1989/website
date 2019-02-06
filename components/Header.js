@@ -1,12 +1,10 @@
 import Link from "next/link";
-import AnimationLinks from "./AnimationLinks";
 import { withRouter } from "next/router";
 import { mainLinks } from "../js/globals";
-import { activeClass } from "../js/utils";
+import { upperCaseLink } from "../js/utils";
 
 export default withRouter(
   class Header extends React.Component {
-    componentDidMount() {}
     render() {
       return (
         <ul className="row header">
@@ -24,13 +22,8 @@ export default withRouter(
             </a>
           </Link>
           {mainLinks.map((page, key) => {
-            const nameLength = page.name.split("").length;
-            const linkName =
-              page.name.split("")[0].toUpperCase() +
-              page.name
-                .split("")
-                .splice(1, nameLength)
-                .join("");
+            const linkName = upperCaseLink(page.name);
+
             return (
               <Link
                 key={key}
@@ -51,7 +44,6 @@ export default withRouter(
               </Link>
             );
           })}
-          <AnimationLinks />;
         </ul>
       );
     }

@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs");
 
 const debug = process.env.NODE_ENV !== "production";
-const directory = path.join(__dirname, "pages", "animation");
+const directory = path.join(__dirname, "components", "animation");
 
 const files = fs.readdirSync(directory);
 

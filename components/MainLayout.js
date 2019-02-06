@@ -1,9 +1,8 @@
 import React from "react";
 
-import { Global, css } from "@emotion/core";
+import { Global } from "@emotion/core";
 import { hydrate } from "emotion";
 import Header from "../components/Header";
-
 // Adds server generated styles to emotion cache.
 // '__NEXT_DATA__.ids' is set in '_document.js'
 if (typeof window !== "undefined") {
@@ -32,6 +31,7 @@ export default Component => {
           console.error("Error while running `getDataFromTree`", error);
         }
       }
+
       return { ...props };
     }
     render() {

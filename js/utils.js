@@ -1,4 +1,10 @@
-exports.activeClass = (a, b, otherClass = "") => {
-  if (a === b) return "cust__active " + otherClass;
-  return otherClass;
+exports.upperCaseLink = name => {
+  const nameLength = name.split("").length;
+  const linkName =
+    name.split("")[0].toUpperCase() +
+    name
+      .split("")
+      .splice(1, nameLength)
+      .join("");
+  return linkName;
 };
