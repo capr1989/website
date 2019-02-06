@@ -27,11 +27,10 @@ export default withRouter(
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
-            console.log(this.props.router.asPath);
             const classCondition = () => {
               if (
-                this.props.router.asPath ===
-                "/" + "animation" + "/" + p.name
+                this.props.router.query.name === this.props.activa &&
+                this.props.router.query.name === p.name
               ) {
                 return "cust__active col nav-link";
               }
@@ -44,7 +43,9 @@ export default withRouter(
                 as={`${process.env.BACKEND_URL}/animation/${p.name}`}
               >
                 <a>
-                  <li className={classCondition()}>{linkName}</li>
+                  <li className={classCondition()} activa={this.props.activa}>
+                    {linkName}
+                  </li>
                 </a>
               </Link>
             );

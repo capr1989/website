@@ -81,10 +81,9 @@ function (_React$Component) {
         var pathLength = _this.props.router.asPath.split("/").length;
 
         var query = pathArr[pathLength - 1];
-        console.log(_this.props.router.asPath);
 
         var classCondition = function classCondition() {
-          if (_this.props.router.asPath === "/" + "animation" + "/" + p.name) {
+          if (_this.props.router.query.name === _this.props.activa && _this.props.router.query.name === p.name) {
             return "cust__active col nav-link";
           }
 
@@ -96,7 +95,8 @@ function (_React$Component) {
           href: "/animation?name=".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: classCondition()
+          className: classCondition(),
+          activa: _this.props.activa
         }, linkName)));
       }));
     }
@@ -14917,6 +14917,13 @@ function (_React$Component) {
   }
 
   _createClass(Animation, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.mountPathArr = window.location.pathname.split("/");
+      this.mountPathLength = this.mountPathArr.length;
+      this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+    }
+  }, {
     key: "render",
     value: function render() {
       var Animation;
@@ -14930,7 +14937,9 @@ function (_React$Component) {
         };
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_AnimationLinks__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Animation, null));
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_AnimationLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        activa: this.props.data.name
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Animation, null));
     }
   }], [{
     key: "getInitialProps",
