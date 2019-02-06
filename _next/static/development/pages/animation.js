@@ -55,7 +55,8 @@ function (_React$Component) {
 
   _createClass(AnimationLinks, [{
     key: "componentDidMount",
-    value: function componentDidMount() {// this.mountPathArr = window.location.pathname.split("/");
+    value: function componentDidMount() {
+      // this.mountPathArr = window.location.pathname.split("/");
       // this.mountPathLength = this.mountPathArr.length;
       // this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
       // const node = document.querySelectorAll(".cust__active.col.nav-link");
@@ -64,6 +65,8 @@ function (_React$Component) {
       //   .splice(1, 2)
       //   .join(" ");
       // node[0].className = classes;
+      // console.log(node[0].classList);
+      console.log("did mount");
     }
   }, {
     key: "render",
