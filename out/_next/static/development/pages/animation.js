@@ -12402,7 +12402,7 @@ function (_React$Component) {
   _createClass(Animation, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Animation");
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AnimationLinks__WEBPACK_IMPORTED_MODULE_2__["default"], null);
     }
   }]);
 
@@ -12430,7 +12430,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/animation.js ***!
   \**********************************/
@@ -12455,5 +12455,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=animation.js.map

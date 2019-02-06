@@ -17,7 +17,7 @@ app.prepare().then(() => {
   });
 
   server.get("/animation/:name", (req, res) => {
-    const actualPage = "/animation/" + req.params.name;
+    const actualPage = "/animation";
     const queryParams = { name: req.params.name };
     app.render(req, res, actualPage, queryParams);
   });

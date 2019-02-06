@@ -6,7 +6,7 @@ export default MainLayout(
   withRouter(
     class Animation extends React.Component {
       render() {
-        return <p>Animation</p>;
+        return <AnimationLinks />;
       }
     }
   )
