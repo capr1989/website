@@ -59,14 +59,12 @@ function (_React$Component) {
       // this.mountPathArr = window.location.pathname.split("/");
       // this.mountPathLength = this.mountPathArr.length;
       // this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
-      // const node = document.querySelectorAll(".cust__active.col.nav-link");
-      // const classes = node[0].className
-      //   .split(" ")
+      var node = document.querySelectorAll(".cust__active.col.nav-link");
+      var classes = node[0].className; //   .split(" ")
       //   .splice(1, 2)
       //   .join(" ");
       // node[0].className = classes;
       // console.log(node[0].classList);
-      console.log("did mount");
     }
   }, {
     key: "render",
@@ -83,10 +81,10 @@ function (_React$Component) {
         var pathLength = _this.props.router.asPath.split("/").length;
 
         var query = pathArr[pathLength - 1];
-        console.log(_this.props.router.query.name);
+        console.log(_this.props.router.asPath);
 
         var classCondition = function classCondition() {
-          if (_this.props.router.query.name === p.name) {
+          if (_this.props.router.asPath === "/" + "animation" + "/" + p.name) {
             return "cust__active col nav-link";
           }
 

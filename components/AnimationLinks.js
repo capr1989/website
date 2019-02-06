@@ -10,14 +10,13 @@ export default withRouter(
       // this.mountPathArr = window.location.pathname.split("/");
       // this.mountPathLength = this.mountPathArr.length;
       // this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
-      // const node = document.querySelectorAll(".cust__active.col.nav-link");
-      // const classes = node[0].className
+      const node = document.querySelectorAll(".cust__active.col.nav-link");
+      const classes = node[0].className;
       //   .split(" ")
       //   .splice(1, 2)
       //   .join(" ");
       // node[0].className = classes;
       // console.log(node[0].classList);
-      console.log("did mount");
     }
 
     render() {
@@ -28,9 +27,12 @@ export default withRouter(
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
-            console.log(this.props.router.query.name);
+            console.log(this.props.router.asPath);
             const classCondition = () => {
-              if (this.props.router.query.name === p.name) {
+              if (
+                this.props.router.asPath ===
+                "/" + "animation" + "/" + p.name
+              ) {
                 return "cust__active col nav-link";
               }
               return "col nav-link";
