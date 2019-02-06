@@ -3,6 +3,7 @@ import Link from "next/link";
 import { animationLinks } from "../js/globals";
 import { withRouter } from "next/router";
 import { upperCaseLink } from "../js/utils";
+import ActiveLink from "../components/ActiveLink";
 
 export default withRouter(
   class AnimationLinks extends React.Component {
@@ -29,8 +30,8 @@ export default withRouter(
             const query = pathArr[pathLength - 1];
             const classCondition = () => {
               if (
-                this.props.router.query.name === this.props.activa &&
-                this.props.router.query.name === p.name
+                `${process.env.BACKEND_URL}/animation/${p.name}` ===
+                `${process.env.BACKEND_URL}${this.props.router.asPath}`
               ) {
                 return "cust__active col nav-link";
               }
