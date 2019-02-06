@@ -78,12 +78,21 @@ function (_React$Component) {
         console.log(query, "=", p.name, "= query name comp");
         console.log("+++++++++++++++++++++++++++++++++++++");
         console.log(_this.mountQuery, "=", p.name, "= Mountquery name comp");
+
+        var classCondition = function classCondition() {
+          if (query === p.name || _this.mountQuery === p.name) {
+            return "cust__active col nav-link";
+          }
+
+          return "col nav-link";
+        };
+
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
           href: "/animation?name=".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: query === p.name || _this.mountQuery === p.name ? "cust__active col nav-link" : "col nav-link"
+          className: classCondition()
         }, linkName)));
       }));
     }

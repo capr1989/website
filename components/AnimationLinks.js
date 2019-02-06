@@ -25,7 +25,12 @@ export default withRouter(
             console.log("+++++++++++++++++++++++++++++++++++++");
 
             console.log(this.mountQuery, "=", p.name, "= Mountquery name comp");
-
+            const classCondition = () => {
+              if (query === p.name || this.mountQuery === p.name) {
+                return "cust__active col nav-link";
+              }
+              return "col nav-link";
+            };
             return (
               <Link
                 key={key}
@@ -33,15 +38,7 @@ export default withRouter(
                 as={`${process.env.BACKEND_URL}/animation/${p.name}`}
               >
                 <a>
-                  <li
-                    className={
-                      query === p.name || this.mountQuery === p.name
-                        ? "cust__active col nav-link"
-                        : "col nav-link"
-                    }
-                  >
-                    {linkName}
-                  </li>
+                  <li className={classCondition()}>{linkName}</li>
                 </a>
               </Link>
             );
