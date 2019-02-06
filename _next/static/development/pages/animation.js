@@ -83,9 +83,10 @@ function (_React$Component) {
         var pathLength = _this.props.router.asPath.split("/").length;
 
         var query = pathArr[pathLength - 1];
+        console.log(_this.props.router.query.name);
 
         var classCondition = function classCondition() {
-          if (query === p.name) {
+          if (_this.props.router.query.name === p.name) {
             return "cust__active col nav-link";
           }
 
