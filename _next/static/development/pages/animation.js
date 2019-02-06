@@ -65,7 +65,6 @@ function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      console.log(this.mountQuery, "querymount");
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_2__["animationLinks"].map(function (p, key) {
@@ -76,9 +75,9 @@ function (_React$Component) {
         var pathLength = _this.props.router.asPath.split("/").length;
 
         var query = pathArr[pathLength - 1];
-        console.log(query, "query");
-        console.log(query === p.name || _this.mountQuery === p.name ? "cust__active col nav-link" : "col nav-link");
-        console.log(query === p.name || _this.mountQuery === p.name);
+        console.log(query, "=", p.name, "= query name comp");
+        console.log("+++++++++++++++++++++++++++++++++++++");
+        console.log(_this.mountQuery, "=", p.name, "= Mountquery name comp");
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
           href: "/animation?name=".concat(p.name),
