@@ -28,9 +28,9 @@ export default withRouter(
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
-
+            console.log(this.props.router.query.name);
             const classCondition = () => {
-              if (query === p.name) {
+              if (this.props.router.query.name === p.name) {
                 return "cust__active col nav-link";
               }
               return "col nav-link";
