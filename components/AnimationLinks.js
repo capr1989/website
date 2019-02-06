@@ -3,6 +3,11 @@ import Link from "next/link";
 import { animationLinks } from "../js/globals";
 import { withRouter } from "next/router";
 import { upperCaseLink } from "../js/utils";
+import { hydrate } from "emotion";
+
+if (typeof window !== "undefined") {
+  hydrate(window.__NEXT_DATA__.ids);
+}
 
 export default withRouter(
   class AnimationLinks extends React.Component {
@@ -14,7 +19,6 @@ export default withRouter(
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
-
             return (
               <Link
                 key={key}
