@@ -19,7 +19,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _js_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/utils */ "./js/utils.js");
 /* harmony import */ var _js_utils__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_utils__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var emotion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! emotion */ "./node_modules/emotion/dist/emotion.esm.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -43,12 +42,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-if (typeof window !== "undefined") {
-  Object(emotion__WEBPACK_IMPORTED_MODULE_5__["hydrate"])(window.__NEXT_DATA__.ids);
-}
-
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(
 /*#__PURE__*/
 function (_React$Component) {
@@ -61,10 +54,18 @@ function (_React$Component) {
   }
 
   _createClass(AnimationLinks, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.mountPathArr = window.location.pathname.split("/");
+      this.mountPathLength = this.mountPathArr.length;
+      this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this = this;
 
+      console.log(this.mountQuery, "querymount");
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_2__["animationLinks"].map(function (p, key) {
@@ -75,12 +76,13 @@ function (_React$Component) {
         var pathLength = _this.props.router.asPath.split("/").length;
 
         var query = pathArr[pathLength - 1];
+        console.log(query, "query");
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
           href: "/animation?name=".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: query === p.name ? "cust__active col nav-link" : "col nav-link"
+          className: query === p.name || _this.mountQuery === p.name ? "cust__active col nav-link" : "col nav-link"
         }, linkName)));
       }));
     }

@@ -3,15 +3,17 @@ import Link from "next/link";
 import { animationLinks } from "../js/globals";
 import { withRouter } from "next/router";
 import { upperCaseLink } from "../js/utils";
-import { hydrate } from "emotion";
-
-if (typeof window !== "undefined") {
-  hydrate(window.__NEXT_DATA__.ids);
-}
 
 export default withRouter(
   class AnimationLinks extends React.Component {
+    componentDidMount() {
+      this.mountPathArr = window.location.pathname.split("/");
+      this.mountPathLength = this.mountPathArr.length;
+      this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
+    }
+
     render() {
+      console.log(this.mountQuery, "querymount");
       return (
         <ul className={"col px-0"}>
           {animationLinks.map((p, key) => {
@@ -19,6 +21,8 @@ export default withRouter(
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
+            console.log(query, "query");
+
             return (
               <Link
                 key={key}
@@ -28,7 +32,7 @@ export default withRouter(
                 <a>
                   <li
                     className={
-                      query === p.name
+                      query === p.name || this.mountQuery === p.name
                         ? "cust__active col nav-link"
                         : "col nav-link"
                     }
