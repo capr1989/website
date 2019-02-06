@@ -61,6 +61,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_2__["animationLinks"].map(function (p, key) {
+        console.log(_this.props.router.query.name === p.name);
         var linkName = Object(_js_utils__WEBPACK_IMPORTED_MODULE_4__["upperCaseLink"])(p.name);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
