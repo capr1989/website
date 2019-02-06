@@ -77,6 +77,8 @@ function (_React$Component) {
 
         var query = pathArr[pathLength - 1];
         console.log(query, "query");
+        console.log(query === p.name || _this.mountQuery === p.name ? "cust__active col nav-link" : "col nav-link");
+        console.log(query === p.name || _this.mountQuery === p.name);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
           href: "/animation?name=".concat(p.name),
