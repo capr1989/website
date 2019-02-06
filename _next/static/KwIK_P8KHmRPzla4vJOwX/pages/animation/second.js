@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{252:function(n,e,t){__NEXT_REGISTER_PAGE("/animation/second",function(){return n.exports=t(253),{page:n.exports.default}})},253:function(n,e,t){"use strict";t.r(e);var o=t(0),a=t.n(o),c=t(4);e.default=Object(c.a)(function(){return a.a.createElement("p",null,"second")})}},[[252,1,0]]]);
