@@ -74,10 +74,10 @@ function (_React$Component) {
 
         var pathLength = _this.props.router.asPath.split("/").length;
 
-        var query = pathArr[pathLength - 1];
+        var query = _this.props.router.query.name;
         console.log(query, "=", p.name, "= query name comp");
         console.log("+++++++++++++++++++++++++++++++++++++");
-        console.log(_this.mountQuery, "=", p.name, "= Mountquery name comp");
+        console.log(pathArr, pathLength, query);
 
         var classCondition = function classCondition() {
           if (query === p.name || _this.mountQuery === p.name) {

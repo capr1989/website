@@ -19,12 +19,12 @@ export default withRouter(
             const linkName = upperCaseLink(p.name);
             const pathArr = this.props.router.asPath.split("/");
             const pathLength = this.props.router.asPath.split("/").length;
-            const query = pathArr[pathLength - 1];
+            const query = this.props.router.query.name;
 
             console.log(query, "=", p.name, "= query name comp");
             console.log("+++++++++++++++++++++++++++++++++++++");
+            console.log(pathArr, pathLength, query);
 
-            console.log(this.mountQuery, "=", p.name, "= Mountquery name comp");
             const classCondition = () => {
               if (query === p.name || this.mountQuery === p.name) {
                 return "cust__active col nav-link";
