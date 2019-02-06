@@ -10,7 +10,6 @@ export default withRouter(
       return (
         <ul className={"col px-0"}>
           {animationLinks.map((p, key) => {
-            console.log(this.props.router.query.name === p.name);
             const linkName = upperCaseLink(p.name);
             return (
               <Link
@@ -21,7 +20,8 @@ export default withRouter(
                 <a>
                   <li
                     className={
-                      this.props.router.query.name === p.name
+                      this.props.router.query.name === p.name ||
+                      this.props.children === p.name
                         ? "cust__active col nav-link"
                         : "col nav-link"
                     }

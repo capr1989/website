@@ -61,14 +61,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "col px-0"
       }, _js_globals__WEBPACK_IMPORTED_MODULE_2__["animationLinks"].map(function (p, key) {
-        console.log(_this.props.router.query.name === p.name);
         var linkName = Object(_js_utils__WEBPACK_IMPORTED_MODULE_4__["upperCaseLink"])(p.name);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: key,
           href: "/animation?name=".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: _this.props.router.query.name === p.name ? "cust__active col nav-link" : "col nav-link"
+          className: _this.props.router.query.name === p.name || _this.props.children === p.name ? "cust__active col nav-link" : "col nav-link"
         }, linkName)));
       }));
     }
@@ -80,4 +79,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=animation.js.0cb3aa4ec751611cdfd2.hot-update.js.map
+//# sourceMappingURL=animation.js.3553a97ef3896063f8c4.hot-update.js.map
