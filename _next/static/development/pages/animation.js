@@ -1,5 +1,48 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/animation.js"],{
 
+/***/ "./components/ActiveLink.js":
+/*!**********************************!*\
+  !*** ./components/ActiveLink.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+
+ // typically you want to use `next/link` for this usecase
+// but this example shows how you can also access the router
+// using the withRouter utility.
+
+var ActiveLink = function ActiveLink(_ref) {
+  var children = _ref.children,
+      router = _ref.router,
+      href = _ref.href;
+  var style = {
+    marginRight: 10,
+    color: router.pathname === href ? "red" : "black"
+  };
+
+  var handleClick = function handleClick(e) {
+    e.preventDefault();
+    router.push(href);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: href,
+    onClick: handleClick,
+    style: style
+  }, children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(ActiveLink));
+
+/***/ }),
+
 /***/ "./components/AnimationLinks.js":
 /*!**************************************!*\
   !*** ./components/AnimationLinks.js ***!
@@ -19,6 +62,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _js_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/utils */ "./js/utils.js");
 /* harmony import */ var _js_utils__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_utils__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_ActiveLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ActiveLink */ "./components/ActiveLink.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36,6 +80,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -83,7 +128,7 @@ function (_React$Component) {
         var query = pathArr[pathLength - 1];
 
         var classCondition = function classCondition() {
-          if (_this.props.router.query.name === _this.props.activa && _this.props.router.query.name === p.name) {
+          if ("".concat("", "/animation/").concat(p.name) === "".concat("").concat(_this.props.router.asPath)) {
             return "cust__active col nav-link";
           }
 
