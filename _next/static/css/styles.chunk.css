@@ -20,5 +20,10 @@ a:hover {
   text-decoration: none;
 }
 
+.cust__foo__active {
+  font-weight: bolder;
+  color: brown;
+}
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
