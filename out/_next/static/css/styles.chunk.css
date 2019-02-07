@@ -21,7 +21,7 @@ a:hover {
 }
 
 .cust__foo__active {
-  font-weight: bolder;
+  font-weight: "300";
   color: brown;
 }
 
