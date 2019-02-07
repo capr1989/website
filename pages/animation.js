@@ -27,7 +27,10 @@ export default withRouter(
 
         return (
           <div>
-            <AnimationLinks activa={this.props.data.name} />
+            <AnimationLinks
+              activa={this.props.data.name}
+              activeClassName={"cust__active"}
+            />
             <Animation />
           </div>
         );

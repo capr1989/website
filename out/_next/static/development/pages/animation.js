@@ -128,7 +128,7 @@ function (_React$Component) {
         var query = pathArr[pathLength - 1];
 
         var classCondition = function classCondition() {
-          if ("".concat("", "/animation/").concat(p.name) === "".concat("").concat(_this.props.router.asPath)) {
+          if (_this.props.router.query.name === p.name) {
             return "cust__active col nav-link";
           }
 
@@ -139,10 +139,9 @@ function (_React$Component) {
           key: key,
           href: "/animation?name=".concat(p.name),
           as: "".concat("", "/animation/").concat(p.name)
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: classCondition(),
-          activa: _this.props.activa
-        }, linkName)));
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          className: classCondition()
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, linkName)));
       }));
     }
   }]);
@@ -14983,7 +14982,8 @@ function (_React$Component) {
       }
 
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_AnimationLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        activa: this.props.data.name
+        activa: this.props.data.name,
+        activeClassName: "cust__active"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Animation, null));
     }
   }], [{

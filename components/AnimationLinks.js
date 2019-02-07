@@ -29,10 +29,7 @@ export default withRouter(
             const pathLength = this.props.router.asPath.split("/").length;
             const query = pathArr[pathLength - 1];
             const classCondition = () => {
-              if (
-                `${process.env.BACKEND_URL}/animation/${p.name}` ===
-                `${process.env.BACKEND_URL}${this.props.router.asPath}`
-              ) {
+              if (this.props.router.query.name === p.name) {
                 return "cust__active col nav-link";
               }
               return "col nav-link";
@@ -43,10 +40,8 @@ export default withRouter(
                 href={`/animation?name=${p.name}`}
                 as={`${process.env.BACKEND_URL}/animation/${p.name}`}
               >
-                <a>
-                  <li className={classCondition()} activa={this.props.activa}>
-                    {linkName}
-                  </li>
+                <a className={classCondition()}>
+                  <li>{linkName}</li>
                 </a>
               </Link>
             );
