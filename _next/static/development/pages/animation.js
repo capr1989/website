@@ -410,8 +410,8 @@ var map = {
 	"./First.js": "./components/animation/First.js",
 	"./Particle": "./components/animation/Particle.js",
 	"./Particle.js": "./components/animation/Particle.js",
-	"./Second": "./components/animation/Second.js",
-	"./Second.js": "./components/animation/Second.js"
+	"./Toggle": "./components/animation/Toggle.js",
+	"./Toggle.js": "./components/animation/Toggle.js"
 };
 
 
@@ -770,16 +770,16 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/animation/Second.js":
+/***/ "./components/animation/Toggle.js":
 /*!****************************************!*\
-  !*** ./components/animation/Second.js ***!
+  !*** ./components/animation/Toggle.js ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Second; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Toggle; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _MainLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../MainLayout */ "./components/MainLayout.js");
@@ -867,23 +867,23 @@ var Inner = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templat
   props.height;
 });
 
-var Second =
+var Toggle =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Second, _React$Component);
+  _inherits(Toggle, _React$Component);
 
-  function Second() {
+  function Toggle() {
     var _getPrototypeOf2;
 
     var _this;
 
-    _classCallCheck(this, Second);
+    _classCallCheck(this, Toggle);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Second)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Toggle)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
       isOpen: false,
@@ -893,7 +893,7 @@ function (_React$Component) {
     return _this;
   }
 
-  _createClass(Second, [{
+  _createClass(Toggle, [{
     key: "componentWillMount",
     value: function componentWillMount() {}
   }, {
@@ -992,7 +992,7 @@ function (_React$Component) {
     }
   }]);
 
-  return Second;
+  return Toggle;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
@@ -1011,7 +1011,7 @@ exports.animationLinks = [{
 }, {
   name: "particle"
 }, {
-  name: "second"
+  name: "toggle"
 }];
 exports.mainLinks = [{
   name: "animation"
