@@ -40,7 +40,7 @@ module.exports = withCSS({
     const animationPages = animationList.reduce(
       (list, animation) => {
         return Object.assign({}, list, {
-          [`/animation/${animation.name}`]: {
+          [`/animation/${animation.name.toLowerCase()}`]: {
             page: "/animation",
             query: { name: animation.name }
           }
@@ -57,6 +57,8 @@ module.exports = withCSS({
       "/story": { page: "/story" },
       "/contact": { page: "/contact" }
     });
+
+    console.log(fullMappedRoutes);
     // combine the map of post pages with the home
     return fullMappedRoutes;
   },
