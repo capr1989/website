@@ -58,6 +58,7 @@ module.exports = withCSS({
       "/contact": { page: "/contact" }
     });
     // combine the map of post pages with the home
+    console.log(fullMappedRoutes);
     return fullMappedRoutes;
   },
 
