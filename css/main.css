@@ -1,19 +1,27 @@
-.cust__active {
-  font-weight: bolder;
-}
-.header {
-  background-color: hotpink;
-}
 * {
   padding: 0;
   margin: 0;
+}
+
+.header {
+  background-color: hotpink;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-.cust__foo__active {
-  font-weight: "300";
-  color: brown;
+.data-collapse {
+  background-color: hotpink;
+  z-index: 3;
+}
+
+div > p.lorem {
+  z-index: 0;
+  display: none;
+  color: white;
+}
+
+.stats {
+  color: white;
 }

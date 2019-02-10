@@ -6,6 +6,7 @@ import { upperCaseLink } from "../js/utils";
 import ActiveLink from "../components/ActiveLink";
 import { hydrate } from "emotion";
 import styled from "@emotion/styled";
+import { Motion, spring } from "react-motion";
 
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);
@@ -20,8 +21,9 @@ export default withRouter(
             const linkName = upperCaseLink(p.name);
 
             const Li = styled.li`
-              font-weight: ${({ name, query }) =>
-                name === query ? "bolder" : "300"};
+              font-weight: ${({ name, query }) => {
+                return name === query ? "bolder" : "300";
+              }};
             `;
             return (
               <Link
