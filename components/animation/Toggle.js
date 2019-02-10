@@ -32,7 +32,7 @@ const Inner = styled.div`
   }};
 `;
 
-export default class Second extends React.Component {
+export default class Toggle extends React.Component {
   state = {
     isOpen: false,
     height: 0
