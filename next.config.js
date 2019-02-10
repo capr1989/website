@@ -10,6 +10,7 @@ const debug = process.env.NODE_ENV !== "production";
 const directory = path.join(__dirname, "components", "animation");
 
 const files = fs.readdirSync(directory);
+//console.log(files); correct
 
 module.exports = withCSS({
   async exportPathMap() {
@@ -36,7 +37,6 @@ module.exports = withCSS({
 
       {}
     );
-
     const animationPages = animationList.reduce(
       (list, animation) => {
         return Object.assign({}, list, {
@@ -58,7 +58,6 @@ module.exports = withCSS({
       "/contact": { page: "/contact" }
     });
     // combine the map of post pages with the home
-    console.log(fullMappedRoutes);
     return fullMappedRoutes;
   },
 

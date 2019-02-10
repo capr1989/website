@@ -3,10 +3,8 @@ import Link from "next/link";
 import { animationLinks } from "../js/globals";
 import { withRouter } from "next/router";
 import { upperCaseLink } from "../js/utils";
-import ActiveLink from "../components/ActiveLink";
 import { hydrate } from "emotion";
 import styled from "@emotion/styled";
-import { Motion, spring } from "react-motion";
 
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);
