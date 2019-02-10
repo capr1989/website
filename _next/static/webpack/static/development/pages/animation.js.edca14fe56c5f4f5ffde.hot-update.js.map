@@ -1,0 +1,1 @@
+{"version":3,"file":"static/webpack/static/development/pages/animation.js.edca14fe56c5f4f5ffde.hot-update.js","sources":["webpack:///./components/animation/Second.js"],"sourcesContent":["import MainLayout from \"../MainLayout\";\n\nexport default () => <p>second</p>;\n"],"mappings":";;;;;;;;;;;;;;;AAAA;AAEA;AAAA;AAAA;;;;A","sourceRoot":""}
