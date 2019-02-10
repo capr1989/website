@@ -5,6 +5,7 @@ import { Motion, spring } from "react-motion";
 
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);
+  alert("hola");
 }
 
 const Container = styled.div`

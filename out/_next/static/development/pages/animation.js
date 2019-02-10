@@ -858,6 +858,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 if (typeof window !== "undefined") {
   Object(emotion__WEBPACK_IMPORTED_MODULE_2__["hydrate"])(window.__NEXT_DATA__.ids);
+  alert("hola");
 }
 
 var Container = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
