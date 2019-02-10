@@ -2,6 +2,7 @@ import MainLayout from "../MainLayout";
 import { hydrate } from "emotion";
 import styled from "@emotion/styled";
 import { Motion, spring } from "react-motion";
+import React from "react";
 
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);

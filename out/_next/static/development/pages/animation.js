@@ -362,6 +362,8 @@ var map = {
 	"./First.js": "./components/animation/First.js",
 	"./Particle": "./components/animation/Particle.js",
 	"./Particle.js": "./components/animation/Particle.js",
+	"./Third": "./components/animation/Third.js",
+	"./Third.js": "./components/animation/Third.js",
 	"./Toggle": "./components/animation/Toggle.js",
 	"./Toggle.js": "./components/animation/Toggle.js"
 };
@@ -722,6 +724,63 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/animation/Third.js":
+/*!***************************************!*\
+  !*** ./components/animation/Third.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Third; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Third =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Third, _React$Component);
+
+  function Third() {
+    _classCallCheck(this, Third);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Third).apply(this, arguments));
+  }
+
+  _createClass(Third, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "HOLA");
+    }
+  }]);
+
+  return Third;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+
+/***/ }),
+
 /***/ "./components/animation/Toggle.js":
 /*!****************************************!*\
   !*** ./components/animation/Toggle.js ***!
@@ -732,15 +791,13 @@ function (_React$Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Toggle; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _MainLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../MainLayout */ "./components/MainLayout.js");
-/* harmony import */ var emotion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! emotion */ "./node_modules/emotion/dist/emotion.esm.js");
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
-/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-motion */ "./node_modules/react-motion/lib/react-motion.js");
-/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_motion__WEBPACK_IMPORTED_MODULE_4__);
-
-
+/* harmony import */ var _MainLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../MainLayout */ "./components/MainLayout.js");
+/* harmony import */ var emotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! emotion */ "./node_modules/emotion/dist/emotion.esm.js");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-motion */ "./node_modules/react-motion/lib/react-motion.js");
+/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_motion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -808,14 +865,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 if (typeof window !== "undefined") {
-  Object(emotion__WEBPACK_IMPORTED_MODULE_2__["hydrate"])(window.__NEXT_DATA__.ids);
+  Object(emotion__WEBPACK_IMPORTED_MODULE_1__["hydrate"])(window.__NEXT_DATA__.ids);
 }
 
-var Container = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
-var Row = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject2());
-var Col = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject3());
-var Inner = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject4(), function (props) {
+var Container = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+var Row = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var Col = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+var Inner = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), function (props) {
   props.height;
 });
 
@@ -873,12 +931,12 @@ function (_React$Component) {
 
       this.onClick = function () {
         var element = document.querySelector("div > p");
-        var openHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_4__["spring"])(300, {
+        var openHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_3__["spring"])(300, {
           precision: 20,
           damping: 60,
           stiffness: 280
         });
-        var closeHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_4__["spring"])(0, {
+        var closeHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_3__["spring"])(0, {
           precision: 20,
           damping: 60,
           stiffness: 280
@@ -902,9 +960,9 @@ function (_React$Component) {
         }
       };
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+      return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Container, {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_motion__WEBPACK_IMPORTED_MODULE_4__["Motion"], {
+      }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_motion__WEBPACK_IMPORTED_MODULE_3__["Motion"], {
         defaultStyle: {
           height: 0
         },
@@ -919,25 +977,25 @@ function (_React$Component) {
           }
         }
       }, function (val) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Row, {
+        return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Row, {
           className: "row"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Col, {
           className: "col-12"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
           className: "btn alert-danger",
           onClick: _this2.onClick
-        }, "Toggle")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
+        }, "Toggle")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Inner, {
           className: "col-12",
           style: {
             height: val.height
           }
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
           className: "lorem"
-        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit.")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
           className: "data-collapse col-12 p-4"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
           className: "stats"
-        }, "Height: ", val.height + "px"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, "Height: ", val.height + "px"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
           className: "stats"
         }, "Opened: ", _this2.state.isOpen.toString())));
       }));
@@ -945,7 +1003,7 @@ function (_React$Component) {
   }]);
 
   return Toggle;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_4___default.a.Component);
 
 
 
@@ -964,6 +1022,8 @@ exports.animationLinks = [{
   name: "particle"
 }, {
   name: "toggle"
+}, {
+  name: "third"
 }];
 exports.mainLinks = [{
   name: "animation"
