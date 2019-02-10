@@ -8,7 +8,6 @@ import styled from "@emotion/styled";
 
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);
-  alert("hola");
 }
 
 export default withRouter(

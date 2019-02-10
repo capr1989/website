@@ -6,11 +6,6 @@ import { upperCaseLink } from "../js/utils";
 export default withRouter(
   MainLayout(
     class Animation extends React.Component {
-      componentDidMount() {
-        this.mountPathArr = window.location.pathname.split("/");
-        this.mountPathLength = this.mountPathArr.length;
-        this.mountQuery = this.mountPathArr[this.mountPathLength - 1];
-      }
       static async getInitialProps(ctx) {
         return { data: await ctx.query };
       }
@@ -27,10 +22,7 @@ export default withRouter(
 
         return (
           <div>
-            <AnimationLinks
-              activa={this.props.data.name}
-              activeClassName={"cust__active"}
-            />
+            <AnimationLinks />
             <Animation />
           </div>
         );
