@@ -42,7 +42,7 @@ module.exports = withCSS({
         return Object.assign({}, list, {
           [`/animation/${animation.name.toLowerCase()}`]: {
             page: "/animation",
-            query: { name: animation.name }
+            query: { name: animation.name.toLowerCase() }
           }
         });
       },
