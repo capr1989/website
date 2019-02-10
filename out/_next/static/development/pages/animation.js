@@ -410,8 +410,8 @@ var map = {
 	"./First.js": "./components/animation/First.js",
 	"./Particle": "./components/animation/Particle.js",
 	"./Particle.js": "./components/animation/Particle.js",
-	"./Toggle": "./components/animation/Toggle.js",
-	"./Toggle.js": "./components/animation/Toggle.js"
+	"./Second": "./components/animation/Second.js",
+	"./Second.js": "./components/animation/Second.js"
 };
 
 
@@ -770,9 +770,9 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/animation/Toggle.js":
+/***/ "./components/animation/Second.js":
 /*!****************************************!*\
-  !*** ./components/animation/Toggle.js ***!
+  !*** ./components/animation/Second.js ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1011,7 +1011,7 @@ exports.animationLinks = [{
 }, {
   name: "particle"
 }, {
-  name: "toggle"
+  name: "second"
 }];
 exports.mainLinks = [{
   name: "animation"
