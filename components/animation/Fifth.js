@@ -1,7 +1,9 @@
 import React from "react";
 
-export default class Fifth extends React.Component {
+class Fifth extends React.Component {
   render() {
-    return <p>pepe</p>;
+    return <p>fifth</p>;
   }
 }
+
+export default Fifth;
