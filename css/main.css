@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.cust__active {
+  font-weight: bolder;
+}
+
 .header {
   background-color: hotpink;
 }
