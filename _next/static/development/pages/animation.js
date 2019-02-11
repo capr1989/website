@@ -405,6 +405,7 @@ webpackContext.id = "./components/animation sync recursive ^\\.\\/.*$";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Fifth; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -448,7 +449,7 @@ function (_React$Component) {
   return Fifth;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Fifth);
+
 
 /***/ }),
 
@@ -904,9 +905,213 @@ function (_React$Component) {
   !*** ./components/animation/Toggle.js ***!
   \****************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-babel-loader.js):\nSyntaxError: /Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/components/animation/Toggle.js: Only one default export allowed per module. (132:0)\n\n\u001b[0m \u001b[90m 130 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[33mReact\u001b[39m from \u001b[32m\"react\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 131 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 132 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m \u001b[36mclass\u001b[39m \u001b[33mFifth\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mComponent\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 133 | \u001b[39m  render() {\u001b[0m\n\u001b[0m \u001b[90m 134 | \u001b[39m    \u001b[36mreturn\u001b[39m \u001b[33m<\u001b[39m\u001b[33mp\u001b[39m\u001b[33m>\u001b[39mpepe\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mp\u001b[39m\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 135 | \u001b[39m  }\u001b[0m\n    at Object.raise (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:3834:17)\n    at Object.raiseDuplicateExportError (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:8443:16)\n    at Object.checkDuplicateExports (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:8436:12)\n    at Object.checkExport (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:8378:14)\n    at Object.parseExport (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:8229:12)\n    at Object.parseStatementContent (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:7290:27)\n    at Object.parseStatement (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:7199:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:7757:25)\n    at Object.parseBlockBody (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:7744:10)\n    at Object.parseTopLevel (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:7164:10)\n    at Object.parse (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:8565:17)\n    at parse (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/parser/lib/index.js:10537:38)\n    at parser (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)\n    at normalizeFile (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)\n    at runSync (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/carlospretto/Desktop/webs-mac/my-web/gh-pages-app/node_modules/@babel/core/lib/transformation/index.js:35:14)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Toggle; });
+/* harmony import */ var _MainLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../MainLayout */ "./components/MainLayout.js");
+/* harmony import */ var emotion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! emotion */ "./node_modules/emotion/dist/emotion.esm.js");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-motion */ "./node_modules/react-motion/lib/react-motion.js");
+/* harmony import */ var react_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_motion__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  background-color: purple;\n  border-top: 1px solid hotpink;\n  height: ", ";\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  background-color: hotpink;\n  height: 15%;\n  padding: 10px;\n  border-top: 1px solid black;\n  border-right: 1px solid black;\n  border-left: 1px solid black;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  height: 100%;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  height: min-content;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+if (typeof window !== "undefined") {
+  Object(emotion__WEBPACK_IMPORTED_MODULE_1__["hydrate"])(window.__NEXT_DATA__.ids);
+}
+
+var Container = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+var Row = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var Col = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+var Inner = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), function (props) {
+  props.height;
+});
+
+var Toggle =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Toggle, _React$Component);
+
+  function Toggle() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Toggle);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Toggle)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      isOpen: false,
+      height: 0
+    });
+
+    return _this;
+  }
+
+  _createClass(Toggle, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var element = document.querySelector("div > p");
+
+      if (this.state.isOpen) {
+        element.style.display = "block";
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      this.onClick = function () {
+        var openHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_3__["spring"])(300, {
+          precision: 20,
+          damping: 60,
+          stiffness: 280
+        });
+        var closeHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_3__["spring"])(0, {
+          precision: 20,
+          damping: 60,
+          stiffness: 280
+        });
+        var open = !_this2.state.isOpen;
+
+        if (open) {
+          return _this2.setState(function (state, props) {
+            return {
+              height: openHeight,
+              isOpen: !state.isOpen
+            };
+          });
+        } else {
+          return _this2.setState(function (state, props) {
+            return {
+              height: closeHeight,
+              isOpen: !state.isOpen
+            };
+          });
+        }
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Container, {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_motion__WEBPACK_IMPORTED_MODULE_3__["Motion"], {
+        defaultStyle: {
+          height: 0
+        },
+        style: {
+          height: this.state.height
+        },
+        onRest: function onRest() {
+          var element = document.querySelector("div > p");
+
+          if (!_this2.state.isOpen) {
+            element.style.display = "none";
+          }
+        }
+      }, function (val) {
+        return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Row, {
+          className: "row"
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Col, {
+          className: "col-12"
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
+          className: "btn alert-danger",
+          onClick: _this2.onClick
+        }, "Toggle")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Inner, {
+          className: "col-12",
+          style: {
+            height: val.height
+          }
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+          className: "lorem"
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos cupiditate repudiandae distinctio omnis accusamus laudantium quo ipsa veniam officiis exercitationem iusto dolorum, laborum deleniti saepe cum soluta dolorem necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit ab nobis voluptatum iusto rem facere alias quod, quos quae? Fugiat aut adipisci a debitis tempora. Excepturi qui odio sit.")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+          className: "data-collapse col-12 p-4"
+        }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+          className: "stats"
+        }, "Height: ", val.height + "px"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+          className: "stats"
+        }, "Opened: ", _this2.state.isOpen.toString())));
+      }));
+    }
+  }]);
+
+  return Toggle;
+}(react__WEBPACK_IMPORTED_MODULE_4___default.a.Component);
+
+
 
 /***/ }),
 
