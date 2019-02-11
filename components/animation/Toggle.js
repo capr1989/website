@@ -126,3 +126,11 @@ export default class Toggle extends React.Component {
     );
   }
 }
+
+import React from "react";
+
+export default class Fifth extends React.Component {
+  render() {
+    return <p>pepe</p>;
+  }
+}
