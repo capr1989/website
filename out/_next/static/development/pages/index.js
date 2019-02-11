@@ -283,6 +283,8 @@ exports.animationLinks = [{
   name: "second"
 }, {
   name: "fourth"
+}, {
+  name: "fifth"
 }];
 exports.mainLinks = [{
   name: "animation"
