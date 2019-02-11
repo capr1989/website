@@ -2,7 +2,7 @@ exports.animationLinks = [
   { name: "first" },
   { name: "particle" },
   { name: "toggle" },
-  { name: "third" }
+  { name: "second" }
 ];
 exports.mainLinks = [
   { name: "animation" },

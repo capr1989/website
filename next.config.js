@@ -8,8 +8,9 @@ const fs = require("fs");
 
 const debug = process.env.NODE_ENV !== "production";
 const directory = path.join(__dirname, "components", "animation");
-
+console.log(directory);
 const files = fs.readdirSync(directory);
+console.log(files);
 //console.log(files); correct
 
 module.exports = withCSS({
@@ -58,7 +59,6 @@ module.exports = withCSS({
       "/contact": { page: "/contact" }
     });
 
-    console.log(fullMappedRoutes);
     // combine the map of post pages with the home
     return fullMappedRoutes;
   },

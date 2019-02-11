@@ -38,20 +38,16 @@ export default class Toggle extends React.Component {
     isOpen: false,
     height: 0
   };
-  componentWillMount() {}
-  componentDidMount() {}
-  componentWillUpdate() {}
+
   componentDidUpdate() {
     const element = document.querySelector("div > p");
     if (this.state.isOpen) {
       element.style.display = "block";
     }
   }
-  componentWillUnmount() {}
 
   render() {
     this.onClick = () => {
-      const element = document.querySelector("div > p");
       const openHeight = spring(300, {
         precision: 20,
         damping: 60,
