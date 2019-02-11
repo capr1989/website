@@ -281,6 +281,8 @@ exports.animationLinks = [{
   name: "toggle"
 }, {
   name: "second"
+}, {
+  name: "fourth"
 }];
 exports.mainLinks = [{
   name: "animation"

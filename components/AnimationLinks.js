@@ -6,6 +6,8 @@ import { upperCaseLink } from "../js/utils";
 import { hydrate } from "emotion";
 import styled from "@emotion/styled";
 
+console.log(animationLinks);
+
 if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids);
 }
