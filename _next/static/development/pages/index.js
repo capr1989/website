@@ -280,7 +280,7 @@ exports.animationLinks = [{
 }, {
   name: "toggle"
 }, {
-  name: "third"
+  name: "second"
 }];
 exports.mainLinks = [{
   name: "animation"

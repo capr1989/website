@@ -362,8 +362,8 @@ var map = {
 	"./First.js": "./components/animation/First.js",
 	"./Particle": "./components/animation/Particle.js",
 	"./Particle.js": "./components/animation/Particle.js",
-	"./Third": "./components/animation/Third.js",
-	"./Third.js": "./components/animation/Third.js",
+	"./Second": "./components/animation/Second.js",
+	"./Second.js": "./components/animation/Second.js",
 	"./Toggle": "./components/animation/Toggle.js",
 	"./Toggle.js": "./components/animation/Toggle.js"
 };
@@ -724,16 +724,16 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/animation/Third.js":
-/*!***************************************!*\
-  !*** ./components/animation/Third.js ***!
-  \***************************************/
+/***/ "./components/animation/Second.js":
+/*!****************************************!*\
+  !*** ./components/animation/Second.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Third; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Second; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -756,25 +756,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Third =
+var Second =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Third, _React$Component);
+  _inherits(Second, _React$Component);
 
-  function Third() {
-    _classCallCheck(this, Third);
+  function Second() {
+    _classCallCheck(this, Second);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Third).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Second).apply(this, arguments));
   }
 
-  _createClass(Third, [{
+  _createClass(Second, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "HOLA");
     }
   }]);
 
-  return Third;
+  return Second;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
@@ -904,15 +904,6 @@ function (_React$Component) {
   }
 
   _createClass(Toggle, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {}
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
-    key: "componentWillUpdate",
-    value: function componentWillUpdate() {}
-  }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
       var element = document.querySelector("div > p");
@@ -922,15 +913,11 @@ function (_React$Component) {
       }
     }
   }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {}
-  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
       this.onClick = function () {
-        var element = document.querySelector("div > p");
         var openHeight = Object(react_motion__WEBPACK_IMPORTED_MODULE_3__["spring"])(300, {
           precision: 20,
           damping: 60,
@@ -1023,7 +1010,7 @@ exports.animationLinks = [{
 }, {
   name: "toggle"
 }, {
-  name: "third"
+  name: "second"
 }];
 exports.mainLinks = [{
   name: "animation"
