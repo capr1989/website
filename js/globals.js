@@ -4,7 +4,8 @@ exports.animationLinks = [
   { name: "toggle" },
   { name: "second" },
   { name: "modal" },
-  { name: "fifth" }
+  { name: "fifth" },
+  { name: "staggered" }
 ];
 exports.mainLinks = [
   { name: "animation" },
