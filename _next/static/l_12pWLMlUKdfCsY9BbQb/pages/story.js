@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{255:function(n,t,e){__NEXT_REGISTER_PAGE("/story",function(){return n.exports=e(256),{page:n.exports.default}})},256:function(n,t,e){"use strict";e.r(t);var o=e(0),r=e.n(o),u=e(8);t.default=Object(u.a)(function(){return r.a.createElement("p",null,"Story")})}},[[255,1,0]]]);
